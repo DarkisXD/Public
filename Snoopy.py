@@ -54,9 +54,9 @@ def Snoop():
 
     # This checks weither or not the machine in use is a vm or not.
     if sys.prefix == sys.base_prefix:
-        print(f'This is a virtual machine\nRunning on {operating_sys} operating system.\n')
-    else:
         print(f'This is a real machine\nRunning on {operating_sys} operating system.\n')
+    else:
+        print(f'This is a virtual machine\nRunning on {operating_sys} operating system.\n')
 
     # This print statement gives me the os, node, release, version, and machine.
     print(f"Here are some of the system's specs: \n\t*Node:{platform.node()}\n\t*Version:{platform.version()}"
